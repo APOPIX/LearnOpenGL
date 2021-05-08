@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA99516926468F1C0091E7DA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA99516826468F1C0091E7DA /* main.cpp */; };
 		BA99517F264691390091E7DA /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; };
 		BA995180264691390091E7DA /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
 		BA995182264691930091E7DA /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = BA995181264691930091E7DA /* glad.c */; };
 		BA995185264691C90091E7DA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA995184264691C90091E7DA /* OpenGL.framework */; };
-		BA9951862646967E0091E7DA /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		BA995188264696800091E7DA /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA9951972646B5BA0091E7DA /* HelloWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA99518A2646B56B0091E7DA /* HelloWindow.cpp */; };
+		BA9951982646B6550091E7DA /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
+		BA99519B2646B6650091E7DA /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; };
+		BA99519D2646B6710091E7DA /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA995184264691C90091E7DA /* OpenGL.framework */; };
+		BA99519E2646BA800091E7DA /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = BA995181264691930091E7DA /* glad.c */; };
+		BA99519F2646BC5C0091E7DA /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA9951A12646BC5D0091E7DA /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA9951A22646BC6B0091E7DA /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA9951A42646BC6C0091E7DA /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,14 +32,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
-		BA9951872646967E0091E7DA /* Embed Libraries */ = {
+		BA99518E2646B59A0091E7DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BA9951A02646BC5C0091E7DA /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BA995188264696800091E7DA /* libglfw.3.3.dylib in Embed Libraries */,
-				BA9951862646967E0091E7DA /* libGLEW.2.2.0.dylib in Embed Libraries */,
+				BA9951A12646BC5D0091E7DA /* libglfw.3.3.dylib in Embed Libraries */,
+				BA99519F2646BC5C0091E7DA /* libGLEW.2.2.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA9951A32646BC6B0091E7DA /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA9951A42646BC6C0091E7DA /* libglfw.3.3.dylib in Embed Libraries */,
+				BA9951A22646BC6B0091E7DA /* libGLEW.2.2.0.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,7 +69,6 @@
 
 /* Begin PBXFileReference section */
 		BA99516526468F1C0091E7DA /* LearnOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LearnOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA99516826468F1C0091E7DA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		BA9951732646912F0091E7DA /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
 		BA9951752646912F0091E7DA /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
 		BA9951762646912F0091E7DA /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
@@ -54,6 +80,8 @@
 		BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.2.2.0.dylib; sourceTree = "<group>"; };
 		BA995181264691930091E7DA /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 		BA995184264691C90091E7DA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BA99518A2646B56B0091E7DA /* HelloWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloWindow.cpp; sourceTree = "<group>"; };
+		BA9951902646B59A0091E7DA /* HelloWindow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloWindow; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +92,16 @@
 				BA995185264691C90091E7DA /* OpenGL.framework in Frameworks */,
 				BA99517F264691390091E7DA /* libglfw.3.3.dylib in Frameworks */,
 				BA995180264691390091E7DA /* libGLEW.2.2.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA99518D2646B59A0091E7DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA99519B2646B6650091E7DA /* libglfw.3.3.dylib in Frameworks */,
+				BA9951982646B6550091E7DA /* libGLEW.2.2.0.dylib in Frameworks */,
+				BA99519D2646B6710091E7DA /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				BA99516526468F1C0091E7DA /* LearnOpenGL */,
+				BA9951902646B59A0091E7DA /* HelloWindow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,7 +130,7 @@
 		BA99516726468F1C0091E7DA /* LearnOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				BA99516826468F1C0091E7DA /* main.cpp */,
+				BA9951892646B5450091E7DA /* HelloWindow */,
 			);
 			path = LearnOpenGL;
 			sourceTree = "<group>";
@@ -169,6 +208,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA9951892646B5450091E7DA /* HelloWindow */ = {
+			isa = PBXGroup;
+			children = (
+				BA99518A2646B56B0091E7DA /* HelloWindow.cpp */,
+			);
+			path = HelloWindow;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,7 +226,7 @@
 				BA99516126468F1C0091E7DA /* Sources */,
 				BA99516226468F1C0091E7DA /* Frameworks */,
 				BA99516326468F1C0091E7DA /* CopyFiles */,
-				BA9951872646967E0091E7DA /* Embed Libraries */,
+				BA9951A32646BC6B0091E7DA /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -188,6 +235,24 @@
 			name = LearnOpenGL;
 			productName = LearnOpenGL;
 			productReference = BA99516526468F1C0091E7DA /* LearnOpenGL */;
+			productType = "com.apple.product-type.tool";
+		};
+		BA99518F2646B59A0091E7DA /* HelloWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA9951942646B59A0091E7DA /* Build configuration list for PBXNativeTarget "HelloWindow" */;
+			buildPhases = (
+				BA9951A02646BC5C0091E7DA /* Embed Libraries */,
+				BA99518D2646B59A0091E7DA /* Frameworks */,
+				BA99518C2646B59A0091E7DA /* Sources */,
+				BA99518E2646B59A0091E7DA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloWindow;
+			productName = HelloWindow;
+			productReference = BA9951902646B59A0091E7DA /* HelloWindow */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -199,6 +264,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					BA99516426468F1C0091E7DA = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					BA99518F2646B59A0091E7DA = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -217,6 +285,7 @@
 			projectRoot = "";
 			targets = (
 				BA99516426468F1C0091E7DA /* LearnOpenGL */,
+				BA99518F2646B59A0091E7DA /* HelloWindow */,
 			);
 		};
 /* End PBXProject section */
@@ -226,8 +295,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA99516926468F1C0091E7DA /* main.cpp in Sources */,
 				BA995182264691930091E7DA /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA99518C2646B59A0091E7DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA9951972646B5BA0091E7DA /* HelloWindow.cpp in Sources */,
+				BA99519E2646BA800091E7DA /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +458,34 @@
 			};
 			name = Release;
 		};
+		BA9951952646B59A0091E7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83WZ8VDGSR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA9951962646B59A0091E7DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83WZ8VDGSR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -398,6 +503,15 @@
 			buildConfigurations = (
 				BA99516D26468F1C0091E7DA /* Debug */,
 				BA99516E26468F1C0091E7DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA9951942646B59A0091E7DA /* Build configuration list for PBXNativeTarget "HelloWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA9951952646B59A0091E7DA /* Debug */,
+				BA9951962646B59A0091E7DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
