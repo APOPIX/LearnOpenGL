@@ -1,18 +1,26 @@
 //
 //  HelloWindow.cpp
-//  LearnOpenGL
+//  HelloWindow
+//
+//  绘制一个最简单的窗口
 //
 //  Created by apophis on 2021/5/8.
 //
 
 #include <stdio.h>
 #include <iostream>
+#include <thread>
+#include <chrono>
 #include "glad.h"
 #include "glfw3.h"
 
 //监听窗口尺寸改变
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
+    //设置OpenGL渲染窗口的尺寸大小，即视口(Viewport)
+    //该函数前两个参数控制窗口左下角的位置。第三个和第四个参数控制渲染窗口的宽度和高度（像素）。
+    //OpenGL坐标范围在-1到1，在本示例中，将(-1到1)范围内的坐标映射到(0, 800)和(0, 600)。
+    //例如，OpenGL中的坐标(-0.5, 0.5)有可能（最终）被映射为屏幕中的坐标(200,450)
     glViewport(0, 0, width, height);
 }
 
@@ -33,6 +41,8 @@ int main()
         return -1;
     }
     glfwMakeContextCurrent(window);
+    //注册回调，监听窗口尺寸变化
+    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     
     //GLAD加载OpenGL函数指针
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -40,15 +50,6 @@ int main()
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
-    
-    //设置OpenGL渲染窗口的尺寸大小，即视口(Viewport)
-    //该函数前两个参数控制窗口左下角的位置。第三个和第四个参数控制渲染窗口的宽度和高度（像素）。
-    //OpenGL坐标范围在-1到1，在本示例中，将(-1到1)范围内的坐标映射到(0, 800)和(0, 600)。
-    //例如，OpenGL中的坐标(-0.5, 0.5)有可能（最终）被映射为屏幕中的坐标(200,450)
-    glViewport(0, 0, 800, 600);
-    
-    //注册回调，监听窗口尺寸变化
-    glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     
     while(!glfwWindowShouldClose(window))
     {//glfwWindowShouldClose函数在我们每次循环的开始前检查一次GLFW是否被要求退出
@@ -61,8 +62,9 @@ int main()
          前缓冲保存着最终输出的图像，它会在屏幕上显示；而所有的的渲染指令都会在后缓冲上绘制。当所有的渲染指令执行完毕后，
          我们交换(Swap)前缓冲和后缓冲，这样图像就立即呈显出来，之前提到的不真实感就消除了。*/
         glfwSwapBuffers(window);
-        //glfwPollEvents检查有无出发事件（如键盘输入、鼠标移动等）、更新窗口状态，并调用对应的回调
+        //glfwPollEvents检查有无触发事件（如键盘输入、鼠标移动等）、更新窗口状态，并调用对应的回调
         glfwPollEvents();
+        std::this_thread::sleep_for(std::chrono::milliseconds(10));
     }
     glfwTerminate();
     return 0;
