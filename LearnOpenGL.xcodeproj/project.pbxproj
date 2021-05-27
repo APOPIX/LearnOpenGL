@@ -21,6 +21,13 @@
 		BA323EF2264C16D8007A8CBB /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
 		BA323EF3264C16D8007A8CBB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA995184264691C90091E7DA /* OpenGL.framework */; };
 		BA323EFA264C175B007A8CBB /* HelloTriangleExercise1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA323EF9264C175B007A8CBB /* HelloTriangleExercise1.cpp */; };
+		BA684BB8265F596800AEFFE4 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA684BB9265F596800AEFFE4 /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA684BBB265F596800AEFFE4 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = BA995181264691930091E7DA /* glad.c */; };
+		BA684BBE265F596800AEFFE4 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; };
+		BA684BBF265F596800AEFFE4 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
+		BA684BC0265F596800AEFFE4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA995184264691C90091E7DA /* OpenGL.framework */; };
+		BA684BC8265F59B900AEFFE4 /* HelloTriangleExercise3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA684BC6265F59B900AEFFE4 /* HelloTriangleExercise3.cpp */; };
 		BA9951972646B5BA0091E7DA /* HelloWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA99518A2646B56B0091E7DA /* HelloWindow.cpp */; };
 		BA9951982646B6550091E7DA /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
 		BA99519B2646B6650091E7DA /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; };
@@ -80,6 +87,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		BA684BB7265F596800AEFFE4 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA684BB8265F596800AEFFE4 /* libglfw.3.3.dylib in Embed Libraries */,
+				BA684BB9265F596800AEFFE4 /* libGLEW.2.2.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA684BC1265F596800AEFFE4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		BA99518E2646B59A0091E7DA /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +157,8 @@
 		BA249FCC265E905F009A70C3 /* HelloTriangleEx.2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangleEx.2; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA323EF8264C16D8007A8CBB /* HelloTriangleEx.1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangleEx.1; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA323EF9264C175B007A8CBB /* HelloTriangleExercise1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleExercise1.cpp; sourceTree = "<group>"; };
+		BA684BC5265F596800AEFFE4 /* HelloTriangleEx.3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangleEx.3; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA684BC6265F59B900AEFFE4 /* HelloTriangleExercise3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleExercise3.cpp; sourceTree = "<group>"; };
 		BA9951732646912F0091E7DA /* khrplatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = khrplatform.h; sourceTree = "<group>"; };
 		BA9951752646912F0091E7DA /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
 		BA9951762646912F0091E7DA /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
@@ -164,6 +194,16 @@
 				BA323EF1264C16D8007A8CBB /* libglfw.3.3.dylib in Frameworks */,
 				BA323EF2264C16D8007A8CBB /* libGLEW.2.2.0.dylib in Frameworks */,
 				BA323EF3264C16D8007A8CBB /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA684BBD265F596800AEFFE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA684BBE265F596800AEFFE4 /* libglfw.3.3.dylib in Frameworks */,
+				BA684BBF265F596800AEFFE4 /* libGLEW.2.2.0.dylib in Frameworks */,
+				BA684BC0265F596800AEFFE4 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +247,7 @@
 				BA9951D12647B9BD0091E7DA /* HelloTriangle */,
 				BA323EF8264C16D8007A8CBB /* HelloTriangleEx.1 */,
 				BA249FCC265E905F009A70C3 /* HelloTriangleEx.2 */,
+				BA684BC5265F596800AEFFE4 /* HelloTriangleEx.3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,6 +348,7 @@
 				BA9951D32647B9BD0091E7DA /* HelloTriangle.cpp */,
 				BA323EF9264C175B007A8CBB /* HelloTriangleExercise1.cpp */,
 				BA249FBA265E904A009A70C3 /* HelloTriangleExercise2.cpp */,
+				BA684BC6265F59B900AEFFE4 /* HelloTriangleExercise3.cpp */,
 			);
 			path = HelloTriangle;
 			sourceTree = "<group>";
@@ -348,6 +390,24 @@
 			name = HelloTriangleEx.1;
 			productName = HelloTriangle;
 			productReference = BA323EF8264C16D8007A8CBB /* HelloTriangleEx.1 */;
+			productType = "com.apple.product-type.tool";
+		};
+		BA684BB6265F596800AEFFE4 /* HelloTriangleEx.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA684BC2265F596800AEFFE4 /* Build configuration list for PBXNativeTarget "HelloTriangleEx.3" */;
+			buildPhases = (
+				BA684BB7265F596800AEFFE4 /* Embed Libraries */,
+				BA684BBA265F596800AEFFE4 /* Sources */,
+				BA684BBD265F596800AEFFE4 /* Frameworks */,
+				BA684BC1265F596800AEFFE4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelloTriangleEx.3;
+			productName = HelloTriangle;
+			productReference = BA684BC5265F596800AEFFE4 /* HelloTriangleEx.3 */;
 			productType = "com.apple.product-type.tool";
 		};
 		BA99518F2646B59A0091E7DA /* HelloWindow */ = {
@@ -419,6 +479,7 @@
 				BA9951D02647B9BD0091E7DA /* HelloTriangle */,
 				BA323EE9264C16D8007A8CBB /* HelloTriangleEx.1 */,
 				BA249FBC265E905F009A70C3 /* HelloTriangleEx.2 */,
+				BA684BB6265F596800AEFFE4 /* HelloTriangleEx.3 */,
 			);
 		};
 /* End PBXProject section */
@@ -439,6 +500,15 @@
 			files = (
 				BA323EFA264C175B007A8CBB /* HelloTriangleExercise1.cpp in Sources */,
 				BA323EEF264C16D8007A8CBB /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA684BBA265F596800AEFFE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA684BBB265F596800AEFFE4 /* glad.c in Sources */,
+				BA684BC8265F59B900AEFFE4 /* HelloTriangleExercise3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +576,34 @@
 			name = Debug;
 		};
 		BA323EF7264C16D8007A8CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83WZ8VDGSR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA684BC3265F596800AEFFE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83WZ8VDGSR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA684BC4265F596800AEFFE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -711,6 +809,15 @@
 			buildConfigurations = (
 				BA323EF6264C16D8007A8CBB /* Debug */,
 				BA323EF7264C16D8007A8CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA684BC2265F596800AEFFE4 /* Build configuration list for PBXNativeTarget "HelloTriangleEx.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA684BC3265F596800AEFFE4 /* Debug */,
+				BA684BC4265F596800AEFFE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
