@@ -19,20 +19,30 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>HelloTriangleEx.3.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
-		</dict>
 		<key>HelloTriangleEx.2.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>HelloTriangleEx.3 copy.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>HelloTriangleEx.3.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>HelloWindow.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Shaders.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -43,6 +53,16 @@
 			<true/>
 		</dict>
 		<key>BA323EE9264C16D8007A8CBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA684BB6265F596800AEFFE4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA684CBB26649F2600AEFFE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
