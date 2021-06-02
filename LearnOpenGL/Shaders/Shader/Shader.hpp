@@ -1,9 +1,7 @@
 //
 //  Shader.hpp
-//  Shaders
-//  编写、编译、管理着色器是件麻烦事。在着色器主题的最后，我们会写一个类来让我们的生活轻松一点，
-//  它可以从硬盘读取着色器，然后编译并链接它们，并对它们进行错误检测，这就变得很好用了。
-//  这也会让你了解该如何封装目前所学的知识到一个抽象对象中。
+//  Shader
+//  用C++封装的Shader类可以从硬盘读取着色器，然后编译并链接它们，并对它们进行错误检测。
 //
 //  Created by apophis on 2021/5/31.
 //
@@ -11,7 +9,6 @@
 #ifndef Shader_hpp
 #define Shader_hpp
 
-#include <stdio.h>
 #include <string>
 
 class Shader {

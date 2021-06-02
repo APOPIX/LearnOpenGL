@@ -1,6 +1,6 @@
 //
 //  HelloTriangleExercise1.cpp
-//  HelloTriangleExercise1
+//  HelloTriangleEx.1
 //
 //  课后习题1:使用glDrawArrays绘制两个彼此相连的三角形
 //

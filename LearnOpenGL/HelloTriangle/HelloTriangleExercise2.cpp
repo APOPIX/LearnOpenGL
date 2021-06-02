@@ -1,6 +1,6 @@
 //
 //  HelloTriangleExercise2.cpp
-//  HelloTriangleExercise2
+//  HelloTriangleEx.2
 //
 //  课后习题2:创建相同的两个三角形，但对它们的数据使用不同的VAO和VBO
 //

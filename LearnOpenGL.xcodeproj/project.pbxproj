@@ -21,6 +21,17 @@
 		BA323EF2264C16D8007A8CBB /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
 		BA323EF3264C16D8007A8CBB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA995184264691C90091E7DA /* OpenGL.framework */; };
 		BA323EFA264C175B007A8CBB /* HelloTriangleExercise1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA323EF9264C175B007A8CBB /* HelloTriangleExercise1.cpp */; };
+		BA4E99E026673E9400D0F199 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA4E99E126673E9400D0F199 /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		BA4E99E326673E9400D0F199 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = BA995181264691930091E7DA /* glad.c */; };
+		BA4E99E426673E9400D0F199 /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA684CCC26649FAC00AEFFE4 /* Shader.cpp */; };
+		BA4E99E626673E9400D0F199 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; };
+		BA4E99E726673E9400D0F199 /* libGLEW.2.2.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; };
+		BA4E99E826673E9400D0F199 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA995184264691C90091E7DA /* OpenGL.framework */; };
+		BA4E99EB26673E9400D0F199 /* colourfulTriangle.frag in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA684E222665F27F00AEFFE4 /* colourfulTriangle.frag */; };
+		BA4E99F226673F7100D0F199 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E99F126673F7100D0F199 /* Shaders.cpp */; };
+		BA4E99F4266740E400D0F199 /* ShadersExercise1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA4E99F3266740E400D0F199 /* ShadersExercise1.cpp */; };
+		BA4E99F62667432C00D0F199 /* invertedTriangle.vert in CopyFiles */ = {isa = PBXBuildFile; fileRef = BA4E99F5266741B100D0F199 /* invertedTriangle.vert */; };
 		BA684BB8265F596800AEFFE4 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517D264691390091E7DA /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BA684BB9265F596800AEFFE4 /* libGLEW.2.2.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = BA99517E264691390091E7DA /* libGLEW.2.2.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		BA684BBB265F596800AEFFE4 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = BA995181264691930091E7DA /* glad.c */; };
@@ -95,6 +106,29 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		BA4E99DF26673E9400D0F199 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BA4E99E026673E9400D0F199 /* libglfw.3.3.dylib in Embed Libraries */,
+				BA4E99E126673E9400D0F199 /* libGLEW.2.2.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4E99E926673E9400D0F199 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				BA4E99F62667432C00D0F199 /* invertedTriangle.vert in CopyFiles */,
+				BA4E99EB26673E9400D0F199 /* colourfulTriangle.frag in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BA684BB7265F596800AEFFE4 /* Embed Libraries */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -189,6 +223,10 @@
 		BA249FCC265E905F009A70C3 /* HelloTriangleEx.2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangleEx.2; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA323EF8264C16D8007A8CBB /* HelloTriangleEx.1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangleEx.1; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA323EF9264C175B007A8CBB /* HelloTriangleExercise1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleExercise1.cpp; sourceTree = "<group>"; };
+		BA4E99EF26673E9400D0F199 /* ShadersEx.1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShadersEx.1; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4E99F126673F7100D0F199 /* Shaders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders.cpp; sourceTree = "<group>"; };
+		BA4E99F3266740E400D0F199 /* ShadersExercise1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShadersExercise1.cpp; sourceTree = "<group>"; };
+		BA4E99F5266741B100D0F199 /* invertedTriangle.vert */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = invertedTriangle.vert; sourceTree = "<group>"; };
 		BA684BC5265F596800AEFFE4 /* HelloTriangleEx.3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HelloTriangleEx.3; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA684BC6265F59B900AEFFE4 /* HelloTriangleExercise3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = HelloTriangleExercise3.cpp; sourceTree = "<group>"; };
 		BA684CCA26649F2600AEFFE4 /* Shaders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Shaders; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +269,16 @@
 				BA323EF1264C16D8007A8CBB /* libglfw.3.3.dylib in Frameworks */,
 				BA323EF2264C16D8007A8CBB /* libGLEW.2.2.0.dylib in Frameworks */,
 				BA323EF3264C16D8007A8CBB /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA4E99E526673E9400D0F199 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4E99E626673E9400D0F199 /* libglfw.3.3.dylib in Frameworks */,
+				BA4E99E726673E9400D0F199 /* libGLEW.2.2.0.dylib in Frameworks */,
+				BA4E99E826673E9400D0F199 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,12 +325,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA684CCB26649F5100AEFFE4 /* Shaders */ = {
+		BA4E99F026673F4E00D0F199 /* Shader */ = {
 			isa = PBXGroup;
 			children = (
 				BA684CCD26649FAC00AEFFE4 /* Shader.hpp */,
 				BA684CCC26649FAC00AEFFE4 /* Shader.cpp */,
+			);
+			path = Shader;
+			sourceTree = "<group>";
+		};
+		BA684CCB26649F5100AEFFE4 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				BA4E99F026673F4E00D0F199 /* Shader */,
 				BA684E202665F21D00AEFFE4 /* GLSL */,
+				BA4E99F126673F7100D0F199 /* Shaders.cpp */,
+				BA4E99F3266740E400D0F199 /* ShadersExercise1.cpp */,
 			);
 			path = Shaders;
 			sourceTree = "<group>";
@@ -292,6 +350,7 @@
 			children = (
 				BA684E212665F25E00AEFFE4 /* colourfulTriangle.vert */,
 				BA684E222665F27F00AEFFE4 /* colourfulTriangle.frag */,
+				BA4E99F5266741B100D0F199 /* invertedTriangle.vert */,
 			);
 			path = GLSL;
 			sourceTree = "<group>";
@@ -315,6 +374,7 @@
 				BA249FCC265E905F009A70C3 /* HelloTriangleEx.2 */,
 				BA684BC5265F596800AEFFE4 /* HelloTriangleEx.3 */,
 				BA684CCA26649F2600AEFFE4 /* Shaders */,
+				BA4E99EF26673E9400D0F199 /* ShadersEx.1 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -460,6 +520,24 @@
 			productReference = BA323EF8264C16D8007A8CBB /* HelloTriangleEx.1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		BA4E99DE26673E9400D0F199 /* ShadersEx.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA4E99EC26673E9400D0F199 /* Build configuration list for PBXNativeTarget "ShadersEx.1" */;
+			buildPhases = (
+				BA4E99DF26673E9400D0F199 /* Embed Libraries */,
+				BA4E99E226673E9400D0F199 /* Sources */,
+				BA4E99E526673E9400D0F199 /* Frameworks */,
+				BA4E99E926673E9400D0F199 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShadersEx.1;
+			productName = HelloTriangle;
+			productReference = BA4E99EF26673E9400D0F199 /* ShadersEx.1 */;
+			productType = "com.apple.product-type.tool";
+		};
 		BA684BB6265F596800AEFFE4 /* HelloTriangleEx.3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA684BC2265F596800AEFFE4 /* Build configuration list for PBXNativeTarget "HelloTriangleEx.3" */;
@@ -567,6 +645,7 @@
 				BA249FBC265E905F009A70C3 /* HelloTriangleEx.2 */,
 				BA684BB6265F596800AEFFE4 /* HelloTriangleEx.3 */,
 				BA684CBB26649F2600AEFFE4 /* Shaders */,
+				BA4E99DE26673E9400D0F199 /* ShadersEx.1 */,
 			);
 		};
 /* End PBXProject section */
@@ -590,6 +669,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BA4E99E226673E9400D0F199 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA4E99E326673E9400D0F199 /* glad.c in Sources */,
+				BA4E99F4266740E400D0F199 /* ShadersExercise1.cpp in Sources */,
+				BA4E99E426673E9400D0F199 /* Shader.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BA684BBA265F596800AEFFE4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -603,6 +692,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4E99F226673F7100D0F199 /* Shaders.cpp in Sources */,
 				BA684CC026649F2600AEFFE4 /* glad.c in Sources */,
 				BA684CCE26649FAC00AEFFE4 /* Shader.cpp in Sources */,
 			);
@@ -672,6 +762,34 @@
 			name = Debug;
 		};
 		BA323EF7264C16D8007A8CBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83WZ8VDGSR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA4E99ED26673E9400D0F199 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83WZ8VDGSR;
+				ENABLE_HARDENED_RUNTIME = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependencies/libs",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA4E99EE26673E9400D0F199 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -933,6 +1051,15 @@
 			buildConfigurations = (
 				BA323EF6264C16D8007A8CBB /* Debug */,
 				BA323EF7264C16D8007A8CBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA4E99EC26673E9400D0F199 /* Build configuration list for PBXNativeTarget "ShadersEx.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA4E99ED26673E9400D0F199 /* Debug */,
+				BA4E99EE26673E9400D0F199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
